@@ -1,0 +1,21 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /app
+
+spring:
+  application:
+    name: SystemManagemntApplication
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/Employees
+    username: postgres
+    password: achraf
+    driver-class-name: org.postgresql.Driver
+
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 5
+      idle-timeout: 30000
+      max-lifetime: 1800000
+      connection-timeout: 20000
